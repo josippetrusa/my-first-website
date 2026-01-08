@@ -29,9 +29,6 @@ img.responsive {
   font-weight: 400;
   font-style: normal;
 }
-.roboto-condensed-<uniquifier> {
-  font-family: "Roboto Condensed", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
 }
