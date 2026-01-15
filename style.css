@@ -54,6 +54,7 @@ nav {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 /* Logo Styling */
@@ -68,6 +69,14 @@ nav {
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+
+/* Shared container to align header/nav and other centered content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
 .nav-links a {
@@ -92,7 +101,7 @@ nav {
 /* Enhanced Header Styling */
 header {
   background: linear-gradient(135deg,#7a9e7d  0%, #e5f4d6 100%);
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -472,7 +481,7 @@ main {
 .breadcrumb {
   max-width: 1200px;
   margin: 20px auto;
-  padding: 0 2rem;   
+  padding: 0;
   text-align: left;
 }
 
