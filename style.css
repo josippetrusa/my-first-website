@@ -1,21 +1,21 @@
 body {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 40px;
 } 
 h2 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 30px;
 } 
 h3 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 20px;
 } 
 p {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 20px;
 } 
 img.responsive {
@@ -58,7 +58,7 @@ nav {
 
 /* Logo Styling */
 .logo h1 {
-  color: #ecf0f1;
+  color: #000000;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -71,10 +71,52 @@ nav {
 }
 
 .nav-links a {
-  color: #ecf0f1;
+  color: #000000;
   text-decoration: none;
   font-size: 1.1rem;
   padding-bottom: 0.25rem;
   border-bottom: 3px solid transparent;
   transition: all 0.3s ease;
 }
+/* Hover Effects for Navigation Links */
+.nav-links a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+/* Active/Current Page Styling */
+.nav-links a.active {
+  color: #000000;
+  border-bottom: 3px solid #000000;
+  font-weight: 600;
+}
+/* Enhanced Header Styling */
+header {
+  background: linear-gradient(135deg,#719b74  0%, #9ac2a7 100%);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+/* Improve spacing and readability */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* On smaller screens, reduce gap */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    font-size: 1rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+}
+
