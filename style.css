@@ -91,7 +91,7 @@ nav {
 }
 /* Enhanced Header Styling */
 header {
-  background: linear-gradient(135deg,#648967  0%, #c0ddca 100%);
+  background: linear-gradient(135deg,#7a9e7d  0%, #e5f4d6 100%);
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
@@ -232,5 +232,206 @@ main {
   margin: 0 auto;
   padding: 2rem;
   width: 100%;
+}
+/* Gallery Section */
+.gallery {
+  margin-top: 4rem;
+}
+
+.gallery h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #5f5f5f;
+}
+
+/* CSS Grid Layout - 2 Column Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* Gallery Item Styling */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+/* Responsive Gallery */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .gallery h2 {
+    font-size: 2rem;
+  }
+  
+  .gallery-item img {
+    height: 250px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .gallery-grid {
+    gap: 1.5rem;
+  }
+}
+ /* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #b1d8b8 0%, #f1f7d5 100%);
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .hero {
+    padding: 3rem 1.5rem;
+  }
+}
+/* Lab Page Styling */
+.lab-header {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(135deg, #b1d8b8 0%, #f1f7d5 100%);
+  color: rgb(255, 255, 255);
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.lab-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.lab-date {
+  font-size: 1.1rem;
+  color: #000000;
+  font-style: italic;
+}
+
+.lab-content {
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.learning-section {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.learning-section h3 {
+  color: #719b74;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.learning-section ul {
+  margin-left: 2rem;
+  line-height: 1.8;
+}
+
+.learning-section li {
+  margin-bottom: 0.5rem;
+}
+/* Screenshot Gallery */
+.lab-images {
+  margin-bottom: 4rem;
+}
+
+.lab-images h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.screenshot-grid figure {
+  margin: 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.screenshot-grid figure:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.screenshot-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.screenshot-grid figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  background-color: #f8f9fa;
 }
 
