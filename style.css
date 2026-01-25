@@ -453,7 +453,7 @@ main {
   max-width: 800px;
   margin: 20px auto;
   padding: 2rem;
-  background-color: #8b9092;
+  background-color: #e4e6e6;
   border-radius: 8px;
   border-left: 4px solid #578a62;
 }
@@ -466,7 +466,7 @@ main {
 .lab-reflection p {
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: #555;
+  color: #615f5f;
 }
 
 .lab-reflection p:last-child {
