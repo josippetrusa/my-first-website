@@ -148,6 +148,9 @@ footer {
   color: #719b74;
   padding: 3rem 2rem 1rem;
   margin-top: 4rem;
+  /* ensure footer sits above any fixed/sticky visuals */
+  position: relative;
+  z-index: 999;
 }
 
 .footer-content {
@@ -541,8 +544,8 @@ body {
 
 /* Main 2-column layout */
 .scrolly-container {
-  display: block;
-  width: 100%;
+  display: flex;
+  min-height: 100vh;
 }
 
 
