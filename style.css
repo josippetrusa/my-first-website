@@ -399,7 +399,7 @@ main {
 }
 
 .lab-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto 4rem;
 }
 
@@ -477,7 +477,7 @@ main {
 
 /* Reflection Section */
 .lab-reflection {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 2rem;
   background-color: #e4e6e6;
