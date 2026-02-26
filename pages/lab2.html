@@ -6,23 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2</title>
     <link rel="stylesheet" href="../style.css">
+    <script defer src="../js/include.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>
-                    <a href="../index.html">My DevDiaries</a>
-                </h1>
-
-            </div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="../components/header.html"></div>
     <nav class="breadcrumb">
         <a href="../index.html">← Back to Home</a>
     </nav>
@@ -91,14 +79,15 @@
                 and disability justice. Today’s class reflected many of the experiences outlined in the book, such as
                 the experience of disabled individuals having to live in a world that is primarily designed for
                 able-bodied people. I appreciated the discussion of this important topic, as it reminded me that I, as a
-                designer, have the ability to make the world more inclusive and accessible through my design decisions.</p>
+                designer, have the ability to make the world more inclusive and accessible through my design decisions.
+            </p>
 
-                <p>During this week’s lab, the concept that I found most difficult to understand and visualize was
+            <p>During this week’s lab, the concept that I found most difficult to understand and visualize was
                 designing the grid layout and spacing. I felt that I never really understood what I was doing until I
                 saved my code and then viewed the site. I think that this will take more time and practice for me to
                 fully understand as I continue to grow in my web development journey.</p>
 
-                <p>One surprise “aha” moment that I needed to work through was an issue where I could not get my gallery
+            <p>One surprise “aha” moment that I needed to work through was an issue where I could not get my gallery
                 images to have rounded corners. I was frustrated because I had copied the code exactly and could not
                 figure out what was going on. I decided to try using an AI tool (Co-Pilot) to try and help me figure out
                 what was wrong with my code. It turns out that I had accidentally copied and pasted the header “css”
@@ -109,32 +98,7 @@
             </p>
         </section>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>My DevDiaries</h3>
-                <p>Documenting my journey in web development</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="lab2.html">About</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: hello@josippetrusa.com</p>
-                <p>Website: <a href="https://www.josippetrusa.com">josippetrusa.com</a></p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 My DevDiaries. All rights reserved.</p>
-        </div>
-    </footer>
+    <div data-include="../components/footer.html"></div>
 </body>
 
 </html>

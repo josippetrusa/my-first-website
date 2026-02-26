@@ -11,22 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alice&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script defer src="../js/include.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>
-                    <a href="index.html">My DevDiaries</a>
-                </h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="../components/header.html"></div>
     <main>
         <section class="hero">
             <h1>Welcome to My DevDiaries</h1>
@@ -50,7 +39,8 @@
 
                 <div class="gallery-item">
                     <a href="pages/lab3.html">
-                        <img src="images/uncharted_storyboard.jpg" alt="Lab 3 project screenshot showing storyboard examples">
+                        <img src="images/uncharted_storyboard.jpg"
+                            alt="Lab 3 project screenshot showing storyboard examples">
                         <div class="gallery-overlay">
                             <h3>Lab 3</h3>
                             <p>22/Jan/2026</p>
@@ -69,13 +59,13 @@
                 </div>
 
                 <div class="gallery-item">
-                        <a href="pages/DevDiaries.html">
-                            <img src="images/coming-soon-1.jpg" alt="DevDiaries">
-                            <div class="gallery-overlay">
-                                <h3>DevDiary Entries</h3>
-                                <p>Ongoing</p>
-                            </div>
-                        </a>
+                    <a href="pages/DevDiaries.html">
+                        <img src="images/coming-soon-1.jpg" alt="DevDiaries">
+                        <div class="gallery-overlay">
+                            <h3>DevDiary Entries</h3>
+                            <p>Ongoing</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div class="gallery-item">
@@ -93,32 +83,7 @@
         </section>
 
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>My DevDiaries</h3>
-                <p>Documenting my journey in web development</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>Email: hello@josippetrusa.com</p>
-                <p>Website: <a href="https://www.josippetrusa.com">josippetrusa.com</a></p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <p>&copy; 2026 My DevDiaries. All rights reserved.</p>
-        </div>
-    </footer>
+    <div data-include="../components/footer.html"></div>
 </body>
 
 </html>
