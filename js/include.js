@@ -22,7 +22,39 @@ async function loadIncludes() {
 
     // Once all includes are injected the nav links exist in the DOM,
     // so we can safely determine and mark the current page.
+    // adjust URLs for GitHub Pages vs local dev
+    adjustNavLinks();
+
     setActiveNav();
+}
+
+function adjustNavLinks() {
+    // Determine if we're hosted on GitHub Pages under a project path
+    const repoPrefix = '/my-first-website';
+    const isGitHub = location.hostname.includes('github.io');
+
+    // select all relevant header/footer links (logo + nav + footer)
+    const links = document.querySelectorAll('header a, .nav-links a, footer a');
+
+    links.forEach((link) => {
+        let href = link.getAttribute('href');
+        if (!href) return;
+
+        if (isGitHub) {
+            // ensure prefix is applied exactly once
+            if (href.startsWith('/') && !href.startsWith(repoPrefix + '/')) {
+                // avoid adding prefix to external URLs starting with http
+                if (!href.startsWith('//')) {
+                    link.setAttribute('href', repoPrefix + href);
+                }
+            }
+        } else {
+            // local environment: strip prefix if present
+            if (href.startsWith(repoPrefix + '/')) {
+                link.setAttribute('href', href.slice(repoPrefix.length));
+            }
+        }
+    });
 }
 
 function setActiveNav() {
